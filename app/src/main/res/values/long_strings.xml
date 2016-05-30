@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="registration_dialog_fragment_text">Для использования полного функционала
+        приложения необходимо зарегестрироваться или выполнить вход.
+    </string>
+</resources>

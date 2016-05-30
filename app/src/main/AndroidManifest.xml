@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.zubkovskiy.trainingdiary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.gmail.zubkovskiy.trainingdiary.global_context.TrainingDiary"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gmail.zubkovskiy.trainingdiary.ui.activities.StartActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.zubkovskiy.trainingdiary.ui.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gmail.zubkovskiy.trainingdiary.ui.activities.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gmail.zubkovskiy.trainingdiary.ui.activities.ExerciseBaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.gmail.zubkovskiy.trainingdiary.ui.activities.TrainingActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

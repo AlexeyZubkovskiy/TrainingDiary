@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_dark_transparent"
+    android:gravity="center"
+
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_dialog_fragment_text"
+        android:textSize="@dimen/start_activity_head_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/very_small_padding"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/fragment_dialog_registration_button"
+            android:textColor="@color/blue_bright"
+            android:id="@+id/fragment_dialog_registration_b"
+            android:layout_marginLeft="@dimen/very_small_padding"
+            android:layout_marginRight="@dimen/very_small_padding"
+            android:gravity="center"
+            android:textSize="@dimen/standard_text_size15"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/fragment_dialog_login_button"
+            android:textColor="@color/green_bright"
+            android:id="@+id/fragment_dialog_login_b"
+            android:layout_marginLeft="@dimen/very_small_padding"
+            android:layout_marginRight="@dimen/very_small_padding"
+            android:gravity="center"
+            android:textSize="@dimen/standard_text_size15"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/fragment_dialog_cancel_button"
+            android:textColor="@color/red_bright"
+            android:id="@+id/fragment_dialog_cancel_b"
+            android:layout_marginLeft="@dimen/very_small_padding"
+            android:layout_marginRight="@dimen/very_small_padding"
+            android:gravity="center"
+            android:textSize="@dimen/standard_text_size15"/>
+
+    </LinearLayout>
+
+</LinearLayout>

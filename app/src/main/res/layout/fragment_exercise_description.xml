@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:layout_margin="@dimen/size_5_dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10_dp"
+        android:text="title"
+        android:textSize="@dimen/standard_text_size20"
+        android:textStyle="bold"
+        android:textColor="@color/green_bright"
+        android:paddingStart="@dimen/size_15_dp"
+        android:paddingEnd="@dimen/size_15_dp"
+        android:layout_marginTop="@dimen/size_10_dp"
+        android:gravity="center|start"
+        android:id="@+id/fragment_exercise_description_title_tv"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_350_dp"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size15"
+            android:text="description description description description description"
+            android:id="@+id/fragment_exercise_description_description_tv"
+            android:padding="@dimen/size_5_dp"/>
+    </ScrollView>
+    <Button
+        android:layout_width="@dimen/size_45_dp"
+        android:layout_height="@dimen/size_45_dp"
+        android:background="@drawable/ok_button"
+        android:id="@+id/fragment_exercise_description_button"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/size_20_dp"
+        android:layout_marginEnd="@dimen/size_100_dp"
+        android:layout_marginBottom="@dimen/size_10_dp"/>
+
+</LinearLayout>

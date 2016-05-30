@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10_dp"
+    android:layout_marginBottom="@dimen/size_10_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="@dimen/size_50_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_training_pattern_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/size_10_dp"
+            android:layout_marginStart="@dimen/size_15_dp"
+            android:text="Approach N :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size20" />
+
+        <EditText
+            android:id="@+id/fragment_training_pattern_et"
+            android:layout_width="@dimen/size_60_dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:background="@color/grey_dark_transparent"
+            android:gravity="center"
+            android:hint="000"
+            android:inputType="numberDecimal|textShortMessage"
+            android:maxLength="5"
+            android:textColor="@color/red_bright"
+            android:textColorHint="@color/red_transparent"
+            android:textSize="@dimen/standard_text_size20"
+            android:textStyle="bold"
+            android:padding="1dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_5_dp"
+            android:layout_marginStart="@dimen/size_5_dp"
+            android:gravity="center"
+            android:text="@string/kg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size20" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_10_dp"
+        android:paddingStart="@dimen/size_50_dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/size_10_dp"
+            android:layout_marginStart="@dimen/size_15_dp"
+            android:text="@string/repeats"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size20" />
+
+        <EditText
+            android:id="@+id/fragment_training_pattern_quantity_et"
+            android:layout_width="@dimen/size_60_dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:background="@color/grey_dark_transparent"
+            android:gravity="center"
+            android:hint="000"
+            android:inputType="numberDecimal|textShortMessage"
+            android:maxLength="3"
+            android:textColor="@color/red_bright"
+            android:textColorHint="@color/red_transparent"
+            android:textSize="@dimen/standard_text_size20"
+            android:textStyle="bold"
+            android:padding="1dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

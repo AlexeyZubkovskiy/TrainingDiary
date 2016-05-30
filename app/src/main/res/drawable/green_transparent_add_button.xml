@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/transparent_green_round"
+    android:gravity="center"
+    android:height="@dimen/size_45_dp"
+    android:width="@dimen/size_45_dp"/>
+    <item android:drawable="@drawable/ic_add_black_24dp"
+        android:gravity="center"
+        android:height="@dimen/size_40_dp"
+        android:width="@dimen/size_40_dp"/>
+    
+</layer-list>

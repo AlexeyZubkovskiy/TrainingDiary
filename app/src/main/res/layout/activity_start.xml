@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:padding="@dimen/start_activity_padding"
+    android:background="@color/black">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_start_head"
+        android:textColor="@color/green_normal"
+        android:textStyle="bold|normal"
+        android:textSize="@dimen/start_activity_head_text_size"
+        android:layout_marginBottom="@dimen/start_activity_padding"
+        style="@style/text_view_shadow_on_black"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bodybuilding_stand_alone_in_round"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="33"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/new_trainig_layout"
+            android:background="@drawable/button_background"
+            android:padding="@dimen/start_activity_padding"
+
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_start_new_training"
+                android:textColor="@color/white"
+                android:textSize="@dimen/start_activity_head_text_size"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/start_activity_padding"
+                style="@style/text_view_shadow_on_black"
+                />
+            <ImageView
+                android:layout_width="@dimen/small_icon_size"
+                android:layout_height="@dimen/small_icon_size"
+                android:src="@drawable/plus_image"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="33"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/diary_layout"
+        android:background="@drawable/button_background"
+        android:padding="@dimen/start_activity_padding"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_start_diary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/start_activity_head_text_size"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/start_activity_padding"
+            style="@style/text_view_shadow_on_black"
+           />
+        <ImageView
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/diary_icon_height"
+            android:src="@drawable/diary_image"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="33"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:padding="@dimen/start_activity_padding"
+            android:id="@+id/exercise_base_layout"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_start_exercise_base"
+                android:textColor="@color/white"
+                android:textSize="@dimen/start_activity_head_text_size"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/start_activity_padding"
+                style="@style/text_view_shadow_on_black"
+                />
+            <ImageView
+                android:layout_width="@dimen/small_icon_size"
+                android:layout_height="@dimen/diary_icon_height"
+                android:src="@drawable/new_training_list"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

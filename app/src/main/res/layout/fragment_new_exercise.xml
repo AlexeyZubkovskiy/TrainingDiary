@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="@dimen/size_15_dp"
+    android:weightSum="100">
+
+    <EditText
+        android:id="@+id/fragment_new_exercise_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_dark_transparent"
+        android:gravity="center"
+        android:hint="@string/fragment_new_exercise_title_hint"
+        android:inputType="textPhonetic"
+        android:paddingBottom="@dimen/size_15_dp"
+        android:paddingTop="@dimen/size_15_dp"
+        android:textColor="@color/green_normal"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/standard_text_size20"
+        android:maxLength="40"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_200_dp"
+        android:layout_marginTop="@dimen/size_20_dp"
+        android:background="@color/grey_dark_transparent">
+
+
+        <EditText
+            android:id="@+id/fragment_new_exercise_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="insideOverlay"
+            android:layout_marginTop="@dimen/size_30_dp"
+            android:gravity="start"
+            android:hint="@string/fragment_new_exercise_description_hint"
+            android:inputType="textMultiLine|textPhonetic"
+            android:padding="@dimen/size_5_dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/standard_text_size20"
+            android:textCursorDrawable="@color/white"
+
+            />
+    </ScrollView>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Категория упражнения (группа мышц)"
+    android:id="@+id/fragment_new_exercise_category_et"
+    android:textColorHint="@color/white"
+    android:textColor="@color/blue_bright"
+    android:background="@color/grey_dark_transparent"
+    android:gravity="center"
+    android:padding="@dimen/size_5_dp"
+    android:layout_marginTop="@dimen/size_20_dp"
+    android:layout_marginBottom="@dimen/size_10_dp"
+    android:inputType="textPhonetic"
+    android:maxLength="20"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15_dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_new_exercise_add_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:background="@drawable/ok_button"
+            android:gravity="center"
+            android:padding="@dimen/size_5_dp"
+             />
+
+        <Button
+            android:id="@+id/fragment_new_exercise_clear_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:layout_marginLeft="@dimen/size_45_dp"
+            android:layout_marginRight="@dimen/size_45_dp"
+            android:background="@drawable/clear_button"
+            android:gravity="center"
+            android:padding="@dimen/size_5_dp"
+            />
+
+        <Button
+            android:id="@+id/fragment_new_exercise_back_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:background="@drawable/back_button"
+            android:gravity="center"
+            android:padding="@dimen/size_5_dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

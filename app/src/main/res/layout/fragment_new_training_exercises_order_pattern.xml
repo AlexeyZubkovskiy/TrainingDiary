@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/size_5_dp"
+    android:padding="@dimen/size_10_dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_5_dp"
+        android:text="category"
+        android:textSize="@dimen/standard_text_size15"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/blue_bright"
+        android:id="@+id/fragment_new_training_exercises_order_pattern_exercise_category_tv"/>
+    <TextView
+        android:id="@+id/fragment_new_training_exercises_order_pattern_exercise_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/standard_text_size25"
+        android:text="exercise name "
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/size_10_dp"/>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="@dimen/size_200_dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size17"
+            android:textColor="@color/green_bright"
+            android:text="@string/order_in_training"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/size_10_dp"/>
+        <EditText
+            android:layout_width="@dimen/size_50_dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size25"
+            android:hint="0"
+            android:textColorHint="@color/red_bright"
+            android:textColor="@color/blue_bright"
+            android:gravity="center"
+            android:background="@color/grey_dark_transparent"
+            android:layout_marginStart="@dimen/size_10_dp"
+            android:inputType="numberDecimal|textShortMessage"
+            android:padding="1dp"
+            android:maxLength="2"
+            android:id="@+id/fragment_new_training_exercises_order_pattern_order_et"
+            />
+    </LinearLayout>
+
+</LinearLayout>

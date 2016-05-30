@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_65_dp"
+        android:layout_margin="@dimen/size_10_dp"
+        android:textColor="@color/green_normal"
+        android:text="Exercise name sdfjlsdf sdfsdf sdfsdf sdfsdfs s"
+        android:textSize="@dimen/standard_text_size25"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/fragment_training_exercise_title_tv"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_300_dp"
+        android:layout_marginTop="@dimen/size_10_dp"
+        android:background="@color/grey_dark_transparent"
+        android:padding="@dimen/size_5_dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_training_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size_15_dp"
+        android:paddingTop="@dimen/size_15_dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/fragment_training_ok_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:background="@drawable/ok_button"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/size_10_dp"
+            android:layout_marginStart="@dimen/size_10_dp" />
+
+        <Button
+            android:id="@+id/fragment_training_exercise_info_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:layout_marginEnd="@dimen/size_10_dp"
+            android:layout_marginStart="@dimen/size_10_dp"
+            android:background="@drawable/info_button"
+            android:gravity="center"
+             />
+
+        <Button
+            android:id="@+id/fragment_training_previous_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:layout_marginEnd="@dimen/size_10_dp"
+            android:layout_marginStart="@dimen/size_10_dp"
+            android:background="@drawable/left_button"
+            android:gravity="center"
+            android:padding="@dimen/size_5_dp" />
+
+        <Button
+            android:id="@+id/fragment_training_next_button"
+            android:layout_width="@dimen/size_45_dp"
+            android:layout_height="@dimen/size_45_dp"
+            android:background="@drawable/right_button"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/size_10_dp"
+            android:layout_marginStart="@dimen/size_10_dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

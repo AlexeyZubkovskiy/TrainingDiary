@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10_dp"
+        android:textColor="@color/green_normal"
+        android:text="Exercise name sdfjlsdf sdfsdf sdfsdf sdfsdfs s"
+        android:textSize="@dimen/standard_text_size25"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/fragment_training_exercise_title_tv"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_300_dp"
+        android:layout_marginTop="@dimen/size_10_dp"
+        android:background="@color/grey_dark_transparent"
+        android:padding="@dimen/size_5_dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_training_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>
